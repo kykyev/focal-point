@@ -1,0 +1,53 @@
+@import "compass";
+@import "focal-point/focal-point";
+@import "css-grids/grid-simple/main";
+@import "css-grids/common/respond-to";
+
+$bp_spec: (phone 240px) (iphone 320px) (iphone2 480px) 
+          (iphone3 640px) (tablet 768px) (tablet2 960px) 
+          (laptop 1024px) (laptop2 1280px) (desktop 1400px);
+
+*, *:after, *:before {
+    @include box-sizing(border-box);
+}
+
+@include focal-point();
+
+@include simple_grid("", 0px);
+
+@include respond_to($bp_spec, iphone3) {
+    @include simple_grid("i3-", 10px);
+}
+
+.focal-point {
+
+    font-size: 0;
+
+    @media only screen and ( max-width: 320px ) { 
+        font-size: 40px;
+    }
+    @media only screen and ( min-width: 321px ) and ( max-width: 480px ) { 
+        font-size: 20px;
+    }
+    @media only screen and ( min-width: 479px ) and ( max-width: 640px ) { 
+        font-size: 0px;
+    }
+    @media only screen and ( min-width: 641px ) and ( max-width: 768px ) { 
+        font-size: 40px;
+    }
+    @media only screen and ( min-width: 769px ) and ( max-width: 960px ) { 
+        font-size: 20px;
+    }
+    @media only screen and ( min-width: 961px ) { 
+        font-size: 0px;
+    }
+}
+
+
+.post {
+    margin: 20px 0;
+}
+
+.post__text {
+    margin-top: 15px;
+}
