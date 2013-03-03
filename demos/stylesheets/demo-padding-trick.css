@@ -1,0 +1,359 @@
+/* line 5, ../sass/demo-padding-trick.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 65, ../../sass/focal-point/_focal-point.scss */
+.focal-point {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* line 71, ../../sass/focal-point/_focal-point.scss */
+.focal-point img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: block;
+}
+
+/* line 79, ../../sass/focal-point/_focal-point.scss */
+.focal-point div {
+  position: relative;
+  max-width: none;
+  height: auto;
+}
+
+/* line 85, ../../sass/focal-point/_focal-point.scss */
+.focal-point div {
+  margin: -3em -4em;
+}
+
+/* line 89, ../../sass/focal-point/_focal-point.scss */
+.portrait.focal-point div {
+  margin: -4em -3em;
+}
+
+/* line 114, ../../sass/focal-point/_focal-point.scss */
+.down-1 div {
+  margin-top: -3.5em;
+  margin-bottom: -2.5em;
+}
+
+/* line 119, ../../sass/focal-point/_focal-point.scss */
+.up-1 div {
+  margin-top: -2.5em;
+  margin-bottom: -3.5em;
+}
+
+/* line 124, ../../sass/focal-point/_focal-point.scss */
+.right-1 div {
+  margin-left: -4.66667em;
+  margin-right: -3.33333em;
+}
+
+/* line 129, ../../sass/focal-point/_focal-point.scss */
+.left-1 div {
+  margin-left: -3.33333em;
+  margin-right: -4.66667em;
+}
+
+/* line 142, ../../sass/focal-point/_focal-point.scss */
+.portrait.down-1 div {
+  margin-top: -4.66667em;
+  margin-bottom: -3.33333em;
+}
+
+/* line 147, ../../sass/focal-point/_focal-point.scss */
+.portrait.up-1 div {
+  margin-top: -3.33333em;
+  margin-bottom: -4.66667em;
+}
+
+/* line 152, ../../sass/focal-point/_focal-point.scss */
+.portrait.right-1 div {
+  margin-left: -3.5em;
+  margin-right: -2.5em;
+}
+
+/* line 157, ../../sass/focal-point/_focal-point.scss */
+.portrait.left-1 div {
+  margin-left: -2.5em;
+  margin-right: -3.5em;
+}
+
+/* line 114, ../../sass/focal-point/_focal-point.scss */
+.down-2 div {
+  margin-top: -4em;
+  margin-bottom: -2em;
+}
+
+/* line 119, ../../sass/focal-point/_focal-point.scss */
+.up-2 div {
+  margin-top: -2em;
+  margin-bottom: -4em;
+}
+
+/* line 124, ../../sass/focal-point/_focal-point.scss */
+.right-2 div {
+  margin-left: -5.33333em;
+  margin-right: -2.66667em;
+}
+
+/* line 129, ../../sass/focal-point/_focal-point.scss */
+.left-2 div {
+  margin-left: -2.66667em;
+  margin-right: -5.33333em;
+}
+
+/* line 142, ../../sass/focal-point/_focal-point.scss */
+.portrait.down-2 div {
+  margin-top: -5.33333em;
+  margin-bottom: -2.66667em;
+}
+
+/* line 147, ../../sass/focal-point/_focal-point.scss */
+.portrait.up-2 div {
+  margin-top: -2.66667em;
+  margin-bottom: -5.33333em;
+}
+
+/* line 152, ../../sass/focal-point/_focal-point.scss */
+.portrait.right-2 div {
+  margin-left: -4em;
+  margin-right: -2em;
+}
+
+/* line 157, ../../sass/focal-point/_focal-point.scss */
+.portrait.left-2 div {
+  margin-left: -2em;
+  margin-right: -4em;
+}
+
+/* line 114, ../../sass/focal-point/_focal-point.scss */
+.down-3 div {
+  margin-top: -4.5em;
+  margin-bottom: -1.5em;
+}
+
+/* line 119, ../../sass/focal-point/_focal-point.scss */
+.up-3 div {
+  margin-top: -1.5em;
+  margin-bottom: -4.5em;
+}
+
+/* line 124, ../../sass/focal-point/_focal-point.scss */
+.right-3 div {
+  margin-left: -6em;
+  margin-right: -2em;
+}
+
+/* line 129, ../../sass/focal-point/_focal-point.scss */
+.left-3 div {
+  margin-left: -2em;
+  margin-right: -6em;
+}
+
+/* line 142, ../../sass/focal-point/_focal-point.scss */
+.portrait.down-3 div {
+  margin-top: -6em;
+  margin-bottom: -2em;
+}
+
+/* line 147, ../../sass/focal-point/_focal-point.scss */
+.portrait.up-3 div {
+  margin-top: -2em;
+  margin-bottom: -6em;
+}
+
+/* line 152, ../../sass/focal-point/_focal-point.scss */
+.portrait.right-3 div {
+  margin-left: -4.5em;
+  margin-right: -1.5em;
+}
+
+/* line 157, ../../sass/focal-point/_focal-point.scss */
+.portrait.left-3 div {
+  margin-left: -1.5em;
+  margin-right: -4.5em;
+}
+
+/* line 114, ../../sass/focal-point/_focal-point.scss */
+.down-4 div {
+  margin-top: -5em;
+  margin-bottom: -1em;
+}
+
+/* line 119, ../../sass/focal-point/_focal-point.scss */
+.up-4 div {
+  margin-top: -1em;
+  margin-bottom: -5em;
+}
+
+/* line 124, ../../sass/focal-point/_focal-point.scss */
+.right-4 div {
+  margin-left: -6.66667em;
+  margin-right: -1.33333em;
+}
+
+/* line 129, ../../sass/focal-point/_focal-point.scss */
+.left-4 div {
+  margin-left: -1.33333em;
+  margin-right: -6.66667em;
+}
+
+/* line 142, ../../sass/focal-point/_focal-point.scss */
+.portrait.down-4 div {
+  margin-top: -6.66667em;
+  margin-bottom: -1.33333em;
+}
+
+/* line 147, ../../sass/focal-point/_focal-point.scss */
+.portrait.up-4 div {
+  margin-top: -1.33333em;
+  margin-bottom: -6.66667em;
+}
+
+/* line 152, ../../sass/focal-point/_focal-point.scss */
+.portrait.right-4 div {
+  margin-left: -5em;
+  margin-right: -1em;
+}
+
+/* line 157, ../../sass/focal-point/_focal-point.scss */
+.portrait.left-4 div {
+  margin-left: -1em;
+  margin-right: -5em;
+}
+
+/* line 114, ../../sass/focal-point/_focal-point.scss */
+.down-5 div {
+  margin-top: -5.5em;
+  margin-bottom: -0.5em;
+}
+
+/* line 119, ../../sass/focal-point/_focal-point.scss */
+.up-5 div {
+  margin-top: -0.5em;
+  margin-bottom: -5.5em;
+}
+
+/* line 124, ../../sass/focal-point/_focal-point.scss */
+.right-5 div {
+  margin-left: -7.33333em;
+  margin-right: -0.66667em;
+}
+
+/* line 129, ../../sass/focal-point/_focal-point.scss */
+.left-5 div {
+  margin-left: -0.66667em;
+  margin-right: -7.33333em;
+}
+
+/* line 142, ../../sass/focal-point/_focal-point.scss */
+.portrait.down-5 div {
+  margin-top: -7.33333em;
+  margin-bottom: -0.66667em;
+}
+
+/* line 147, ../../sass/focal-point/_focal-point.scss */
+.portrait.up-5 div {
+  margin-top: -0.66667em;
+  margin-bottom: -7.33333em;
+}
+
+/* line 152, ../../sass/focal-point/_focal-point.scss */
+.portrait.right-5 div {
+  margin-left: -5.5em;
+  margin-right: -0.5em;
+}
+
+/* line 157, ../../sass/focal-point/_focal-point.scss */
+.portrait.left-5 div {
+  margin-left: -0.5em;
+  margin-right: -5.5em;
+}
+
+/* line 114, ../../sass/focal-point/_focal-point.scss */
+.down-6 div {
+  margin-top: -6em;
+  margin-bottom: -0em;
+}
+
+/* line 119, ../../sass/focal-point/_focal-point.scss */
+.up-6 div {
+  margin-top: -0em;
+  margin-bottom: -6em;
+}
+
+/* line 124, ../../sass/focal-point/_focal-point.scss */
+.right-6 div {
+  margin-left: -8em;
+  margin-right: -0em;
+}
+
+/* line 129, ../../sass/focal-point/_focal-point.scss */
+.left-6 div {
+  margin-left: -0em;
+  margin-right: -8em;
+}
+
+/* line 142, ../../sass/focal-point/_focal-point.scss */
+.portrait.down-6 div {
+  margin-top: -8em;
+  margin-bottom: -0em;
+}
+
+/* line 147, ../../sass/focal-point/_focal-point.scss */
+.portrait.up-6 div {
+  margin-top: -0em;
+  margin-bottom: -8em;
+}
+
+/* line 152, ../../sass/focal-point/_focal-point.scss */
+.portrait.right-6 div {
+  margin-left: -6em;
+  margin-right: -0em;
+}
+
+/* line 157, ../../sass/focal-point/_focal-point.scss */
+.portrait.left-6 div {
+  margin-left: -0em;
+  margin-right: -6em;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 11, ../sass/demo-padding-trick.scss */
+  .focal-point {
+    font-size: 0px;
+  }
+}
+
+/* line 17, ../sass/demo-padding-trick.scss */
+h1 {
+  background: #fac81e;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* line 23, ../sass/demo-padding-trick.scss */
+p {
+  background: #2864e6;
+}
+
+/* line 27, ../sass/demo-padding-trick.scss */
+.focal-point {
+  height: 0;
+  padding-bottom: 75%;
+  background: #32f078;
+}
+
+/* line 33, ../sass/demo-padding-trick.scss */
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}

@@ -1,5 +1,5 @@
 @import "compass";
-@import "focal-point/focal-point";
+@import "focal-point/fecal-point";
 @import "css-grids/grid-simple/main";
 @import "css-grids/common/respond-to";
 
@@ -11,7 +11,7 @@ $bp_spec: (phone 240px) (iphone 320px) (iphone2 480px)
     @include box-sizing(border-box);
 }
 
-@include focal-point();
+@include fecal-point();
 
 @include simple_grid("", 0px);
 
@@ -56,4 +56,9 @@ $bp_spec: (phone 240px) (iphone 320px) (iphone2 480px)
 .post__text {
     margin-top: 15px;
     background: rgb(40, 100, 250);
+}
+
+.post__image {
+    max-width: 640px;
+    margin: 0 auto;
 }
