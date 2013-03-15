@@ -111,22 +111,6 @@
                  margin-left: -#{$margin-op2}em;
                 margin-right: -#{$margin2}em;
             }
-
-            .aratio-4x3 {
-                padding-bottom: 75%;
-            }
-            .aratio-16x9 {
-                padding-bottom: 56.25%;
-            }
-            .aratio-3x2 {
-                padding-bottom: 66.67%;
-            }
-            .aratio-5x3 {
-                padding-bottom: 60%;
-            }
-            .aratio-5x4 {
-                padding-bottom: 80%;
-            }
         }
 
         // =============================================================================
@@ -154,22 +138,38 @@
                  margin-left: -#{$margin-op1}em;
                 margin-right: -#{$margin1}em;
             }
-
-            .portrait.aratio-4x3 {
-                padding-bottom: 130.33%;
-            }
-            .portrait.aratio-16x9 {
-                padding-bottom: 177.78%;
-            }
-            .portrait.aratio-3x2 {
-                padding-bottom: 150%;
-            }
-            .portrait.aratio-5x3 {
-                padding-bottom: 166.67%;
-            }
-            .portrait.aratio-5x4 {
-                padding-bottom: 125%;
-            }
         }
+    }
+
+    .aratio-4x3 {
+        padding-bottom: 75%;
+    }
+    .aratio-16x9 {
+        padding-bottom: 56.25%;
+    }
+    .aratio-3x2 {
+        padding-bottom: 66.67%;
+    }
+    .aratio-5x3 {
+        padding-bottom: 60%;
+    }
+    .aratio-5x4 {
+        padding-bottom: 80%;
+    }
+
+    .portrait.aratio-4x3 {
+        padding-bottom: 130.33%;
+    }
+    .portrait.aratio-16x9 {
+        padding-bottom: 177.78%;
+    }
+    .portrait.aratio-3x2 {
+        padding-bottom: 150%;
+    }
+    .portrait.aratio-5x3 {
+        padding-bottom: 166.67%;
+    }
+    .portrait.aratio-5x4 {
+        padding-bottom: 125%;
     }
 }
