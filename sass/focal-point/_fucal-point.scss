@@ -1,45 +1,24 @@
 // =============================================================================
-// Focal Point: Pure HTML/CSS Adaptive Images Framework
+// Fecal Point: Pure HTML/CSS Adaptive Images Framework
 //
-// Author: Adam Bradley, Daniel Guillan, 2012
-// https://github.com/adamdbradley/focal-point
-// Secondary author: Kykyev, 2013
-//
-// Original Focal-Point library has a problem of layout reflow 
-// during slow image loading or fail one. That's because intrinsic
-// image resizing ability. Several methods exists to handle this issue.
-// 
-// 1. `padding-bottom` as percent of `.focal-point` element width. This preserves image 
-//    aspect ratio. Problem is that any wrap of `.focal-point` element has to have
-//    `display` property set to `block`.
-//
-//  <div class="wrap">
-//      <div class="focal-point aratio-4-3">
-//          <div><img src="image-url.jpg" alt=""></div>
-//      </div>
-//  </div>
-//    
-//  .aratio-4x3 {
-//      padding-bottom: 75%;
-//  }
-//
-// 2. Include in HTML markup faux image of the same dimensions e.g
-//    inlined SVG image of data-uri gif. Obvious downside is
-//    extra markup.
+// Handling problems of layout reflow during image loading and fail
+// loading as well.
 //
 //  <div class="wrap">
 //      <div class="focal-point up-3 right-4">
 //          <div>
-//              <svg width="640" height="480" ></svg>
+//              <svg viewbox="0 0 640 480" ></svg>
 //              <img src="image-url.jpg" alt="">
 //          </div>
 //      </div>
 //  </div>
 // 
+//  `wrap` is needed if you want set max-width of the image   
+//
 // =============================================================================
 
 
-@mixin focal-point(
+@mixin fucal-point(
         $grid: 12,
         $landscape-classes: true,
         $portrait-classes: true,
@@ -69,6 +48,7 @@
     .focal-point {
         width: 100%;
         overflow: hidden;
+        position: relative;
     }
 
     .focal-point img {
@@ -77,12 +57,8 @@
         height: auto;
         -ms-interpolation-mode: bicubic;
         display: block;
-    }
-
-    .focal-point svg {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
+        position: absolute;
+        top: 0;
     }
 
     .focal-point #{$inner-element} {
@@ -167,58 +143,5 @@
                 margin-right: -#{$margin1}em;
             }
         }
-    }
-}
-
-
-@mixin focal-point__patch1() {
-
-    .focal-point__patch1 {
-        height: 0;
-        padding-bottom: 100%; // default aspect ratio is 1x1
-    }
-
-    .aratio-4x3 {
-        padding-bottom: 75%;
-    }
-    .aratio-16x9 {
-        padding-bottom: 56.25%;
-    }
-    .aratio-3x2 {
-        padding-bottom: 66.67%;
-    }
-    .aratio-5x3 {
-        padding-bottom: 60%;
-    }
-    .aratio-5x4 {
-        padding-bottom: 80%;
-    }
-
-    .portrait.aratio-4x3 {
-        padding-bottom: 130.33%;
-    }
-    .portrait.aratio-16x9 {
-        padding-bottom: 177.78%;
-    }
-    .portrait.aratio-3x2 {
-        padding-bottom: 150%;
-    }
-    .portrait.aratio-5x3 {
-        padding-bottom: 166.67%;
-    }
-    .portrait.aratio-5x4 {
-        padding-bottom: 125%;
-    }
-}
-
-
-@mixin focal-point__patch2() {
-    .focal-point__patch2 {
-        position: relative;
-    }
-
-    .focal-point__patch2 img {
-        position: absolute;
-        top: 0;
     }
 }

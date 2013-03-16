@@ -12,6 +12,7 @@ $bp_spec: (phone 240px) (iphone 320px) (iphone2 480px)
 }
 
 @include focal-point();
+@include focal-point__patch1();
 
 @include simple_grid("", 0px);
 
@@ -58,6 +59,8 @@ $bp_spec: (phone 240px) (iphone 320px) (iphone2 480px)
     background: rgb(40, 100, 250);
 }
 
-svg {
-    background: orange;
+.post__image {
+    max-width: 640px;
+    margin: 0 auto;
+    background: red;
 }
