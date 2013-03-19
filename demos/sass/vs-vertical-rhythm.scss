@@ -1,0 +1,47 @@
+@import "compass";
+@import "focal-point/focal-point";
+
+
+*, *:after, *:before {
+    @include box-sizing(border-box);
+}
+
+body {
+    margin: 0;
+}
+
+@include establish-baseline();
+@include focal-point();
+
+
+.focal-point {
+
+    font-size: 0;
+
+    @media only screen and ( max-width: 320px ) { 
+        font-size: 40px;
+    }
+    @media only screen and ( min-width: 321px ) and ( max-width: 480px ) { 
+        font-size: 20px;
+    }
+    @media only screen and ( min-width: 479px ) { 
+        font-size: 0px;
+    }
+}
+
+
+.post__title {
+    @include adjust-font-size-to(24px);
+    background: rgba(250, 200, 30, 0.3);
+    @include debug-vertical-alignment();
+}
+
+.post__text {
+    background: rgba(40, 100, 250, 0.3);
+    @include debug-vertical-alignment();
+}
+
+.post__image {
+    max-width: 640px;
+    margin: 0 auto;
+}
