@@ -35,8 +35,17 @@
 //          </div>
 //      </div>
 //  </div>
-// 
-// =============================================================================
+//
+// 3. Chrome dislikes inlined SVG.
+//
+//  <div class="wrap">
+//      <div class="focal-point up-3 right-4">
+//          <div>
+//              <img src="data:uri">
+//              <img src="image-url.jpg" alt="">
+//          </div>
+//      </div>
+//  </div>// =============================================================================
 
 
 @mixin focal-point(
@@ -77,12 +86,6 @@
         height: auto;
         -ms-interpolation-mode: bicubic;
         display: block;
-    }
-
-    .focal-point svg {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
     }
 
     .focal-point #{$inner-element} {
@@ -213,11 +216,30 @@
 
 
 @mixin focal-point__patch2() {
+
+    .focal-point svg {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
     .focal-point__patch2 {
         position: relative;
     }
 
     .focal-point__patch2 img {
+        position: absolute;
+        top: 0;
+    }
+}
+
+
+@mixin focal-point__patch2nosvg() {
+    .focal-point__patch2 {
+        position: relative;
+    }
+
+    .focal-point__patch2 img:last-child {
         position: absolute;
         top: 0;
     }
